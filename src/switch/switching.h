@@ -60,7 +60,7 @@ void switcheroo_off(void);
 
 /* number of switchers as defined in switching.c */
 #define SWITCHERS_COUNT 2
-struct switching_method switching_methods[SWITCHERS_COUNT];
+external struct switching_method switching_methods[SWITCHERS_COUNT];
 
 /* A switching method that can be used or NULL if none */
 struct switching_method *switcher;
