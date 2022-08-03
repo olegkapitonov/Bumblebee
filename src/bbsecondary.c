@@ -37,6 +37,8 @@
 #include "pci.h"
 #include "module.h"
 
+struct pci_bus_id *pci_bus_id_discrete;
+
 /**
  * Substitutes DRIVER in the passed path
  * @param x_conf_file A path to be processed
