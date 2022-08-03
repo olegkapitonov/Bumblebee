@@ -23,6 +23,8 @@
 #include "../bblogger.h"
 #include "switching.h"
 
+struct switching_method *switcher;
+
 /* increase SWITCHERS_COUNT in switching.h when more methods are added */
 struct switching_method switching_methods[SWITCHERS_COUNT] = {
   {"bbswitch", 1, bbswitch_status, bbswitch_is_available,
